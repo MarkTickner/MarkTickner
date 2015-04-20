@@ -1,0 +1,608 @@
+/*
+Theme Name: Mark Tickner
+Theme URI: http://www.mtickner.co.uk
+Description: Main theme for my website.
+Version: 1.0
+Author: Mark Tickner
+Author URI: http://www.mtickner.co.uk
+*/
+
+/* ==========================================================================
+   Extra small devices (phones, less than 768px)
+========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+html {
+    background-image: url(../../uploads/2014/05/BG1_BW.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 50px 0 0 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-default .navbar-brand {
+    font-family: "Roboto Slab", Georgia, serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    padding: 10px 0 15px;
+    color: #777;
+}
+
+blockquote {
+    font-size: 14px;
+}
+
+a:link, a:visited {
+    color: #27669C;
+}
+
+a:hover, a:active {
+    color: #777;
+}
+
+.btn, .form-control, .navbar-default, .navbar-toggle, .navbar-toggle .icon-bar, .dropdown-menu {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.transition, a, h1, h2, button {
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.small-screen-only {
+    display: inline-block;
+}
+
+.large-screen-only {
+    display: none;
+}
+
+.shadow {
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-big {
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 10px;
+}
+
+.container-full-width {
+    margin: 0;
+    max-width: 100% !important;
+}
+
+.content-container {
+    padding: 0 10px 30px 10px;
+    background-color: #FFF;
+}
+
+.footer {
+    font-size: 10px;
+    color: #333;
+    background-color: #FFF;
+    padding: 1px 3px;
+    float: right;
+    margin-bottom: 50px;
+}
+
+.footer-home {
+    color: #000;
+    background-color: #777;
+    position: absolute;
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 15px;
+    right: 10px;
+}
+
+.post-image {
+    float: right;
+    clear: right;
+    max-width: 40%;
+    height: auto;
+}
+
+.post-image-margin {
+    margin: 0 0 15px 15px;
+}
+
+/* ---------- Home ---------- */
+
+.tagline {
+    color: #FFF;
+    background-color: #777;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #777;
+}
+
+.tagline-text {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.btn-about {
+    color: #FFF !important;
+    background-color: #82202C;
+    border-color: #82202C;
+    font-weight: bold;
+}
+
+    .btn-about:hover, .btn-about:focus, .btn-about:active {
+        background-color: #681A23;
+        border-color: #681A23;
+    }
+
+.btn.shadow:active {
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+
+/* ---------- About ---------- */
+
+.about-me-image {
+    height: 100px;
+    margin: 0 0 20px 40px;
+}
+
+.about-me-image, .about-me-div {
+    width: 100px;
+}
+
+.about-me-div {
+    text-align: right;
+}
+
+/* ---------- My Work - Category.php ---------- */
+
+.work-item {
+    margin-bottom: 15px;
+    background-color: #EEE;
+}
+
+    .work-item:hover, .work-item:focus, .work-item:active {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        filter: alpha(opacity=90);
+        opacity: 0.9;
+        background-color: #F6F6F6;
+    }
+
+    .work-item a:link, .work-item a:visited {
+        color: #333;
+    }
+
+    .work-item a:hover, .work-item a:focus {
+        text-decoration: none;
+    }
+
+.work-item-top {
+    background: url(../../uploads/2014/04/Work_Placeholder.png) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 150px;
+}
+
+.work-item-bottom {
+    padding: 15px 10px;
+}
+
+.work-item-title {
+    padding-bottom: 10px;
+}
+
+.work-item-categories {
+    padding-top: 0;
+}
+
+    .work-item-categories a:hover, .work-item-categories a:focus {
+        text-decoration: underline;
+    }
+
+    .work-item-categories div {
+        background-color: #FFF;
+        font-size: 10px;
+        padding: 3px;
+        display: inline-block;
+    }
+
+    .work-item-categories .glyphicon {
+        padding-right: 3px;
+    }
+
+
+/* ---------- My Work - Single.php ---------- */
+
+.page-header-bar {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.page-header-image {
+    width: 100%;
+    height: 80px;
+}
+
+.post-date {
+    width: 40px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: #FFF;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 200;
+}
+
+.post-day, .post-month, .post-year {
+    font-style: normal;
+    display: block;
+}
+
+.post-day, .post-month {
+    font-weight: bold;
+}
+
+.post-day {
+    line-height: 1;
+    font-size: 30px;
+}
+
+.post-month {
+    line-height: 0.75;
+    font-size: 15px;
+}
+
+.categories {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 3px 5px;
+}
+
+    .categories a:link, .categories a:visited {
+        color: #333;
+    }
+
+    .categories .glyphicon {
+        padding-right: 5px;
+    }
+
+#wpbgallery_container {
+    margin-top: 25px;
+}
+
+    #wpbgallery_container .stretch {
+        width: 100%;
+        display: inline-block;
+    }
+
+#blueimp-gallery .play-pause, .indicator {
+        display: none !important;
+    }
+
+#wpbgallery {
+    text-align: justify;
+}
+
+    #wpbgallery li {
+        display: inline-block !important;
+        margin-bottom: 25px !important;
+        -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+
+        #wpbgallery li:hover, #wpbgallery li:focus, #wpbgallery li:active {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+            filter: alpha(opacity=90);
+            opacity: 0.9;
+        }
+
+        #wpbgallery li img {
+            width: 90px;
+            height: 90px;
+            margin: 5px 3px 15px 3px !important;
+            /*margin: 0px !important;*/
+        }
+
+.post-link .post-link-next {
+    float: left;
+}
+
+.post-link .post-link-previous {
+    float: right;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.nav-link-home > a, .nav-link-about > a, .nav-link-work > a, .nav-link-contact > a, .nav-link-admin > a {
+    font-weight: bold;
+}
+
+    .nav-link-about > a:hover, .nav-link-about > a:focus, .nav-link-work > a:hover, .nav-link-work > a:focus, .nav-link-contact > a:hover, .nav-link-contact > a:focus, .nav-link-home > a:hover, .nav-link-home > a:focus, .nav-link-admin > a:hover, .nav-link-admin > a:focus {
+        color: #FFF !important;
+    }
+
+.nav-link-about > a {
+    color: #82202C !important;
+}
+
+    .nav-link-about > a:hover, .nav-link-about > a:focus {
+        background-color: #82202C !important;
+    }
+
+.nav-link-work > a {
+    color: #27669C !important;
+}
+
+    .nav-link-work > a:hover, .nav-link-work > a:focus {
+        background-color: #27669C !important;
+    }
+
+.nav-link-contact > a {
+    color: #417202 !important;
+}
+
+    .nav-link-contact > a:hover, .nav-link-contact > a:focus {
+        background-color: #417202 !important;
+    }
+
+.nav-link-home > a, .nav-link-admin > a {
+    color: #777 !important;
+}
+
+    .nav-link-home > a:hover, .nav-link-home > a:focus, .nav-link-admin > a:hover, .nav-link-admin > a:focus {
+        background-color: #777 !important;
+    }
+
+.navbar-default {
+    background-color: #FFF;
+    border: 0;
+}
+
+.navbar-nav {
+    font-size: 16px;
+    margin: auto;
+}
+
+.container > .navbar-header {
+    margin-left: 10px;
+}
+
+.container > .navbar-collapse {
+    margin: auto -15px auto -15px;
+}
+
+.nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-brand {
+    padding: 15px 0;
+}
+
+.navbar-brand-home-container {
+    margin-left: 5px;
+}
+
+.nav-top-only {
+    display: block;
+}
+
+.nav-bottom-only {
+    display: none;
+}
+
+.navbar-default .navbar-brand-home {
+    color: #FFF;
+}
+
+    .navbar-default .navbar-brand-home:hover, .navbar-default .navbar-brand-home:focus {
+        color: #CCC;
+    }
+
+    .navbar-default .navbar-brand-home:hover, .navbar-default .navbar-brand-home:focus, .navbar-default .navbar-brand-home {
+        background-color: #777;
+    }
+
+/* WP equivilent of .active */
+.navbar-default .navbar-nav > .current-menu-item > a {
+    background-color: #F6F6F6;
+}
+
+.dropup-menu {
+    bottom: 100%;
+    top: auto !important;
+}
+
+.dropdown .caret-up {
+    border-bottom: 4px solid;
+    border-top: 0 solid;
+}
+
+
+/* ==========================================================================
+   Small devices (tablets, 768px and up)
+========================================================================== */
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 110px;
+    }
+
+    blockquote {
+        font-size: 17.5px;
+    }
+
+    .small-screen-only {
+        display: none;
+    }
+
+    .large-screen-only {
+        display: inline-block;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    /*
+    .footer {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+    }
+    */
+
+
+    /* ---------- About ---------- */
+
+    .about-me-image {
+        height: 200px;
+        margin: 0 0 50px 100px;
+    }
+
+    .about-me-image, .about-me-div {
+        width: 200px;
+    }
+
+    /* ---------- Navbar ---------- */
+
+    .navbar-bottom {
+        top: auto;
+        bottom: 50px;
+        margin: 0;
+    }
+
+    .nav-top-only, .home-content {
+        display: none !important;
+    }
+
+    .nav-bottom-only {
+        display: block;
+    }
+
+    .navbar-brand {
+        padding: 15px;
+    }
+
+    .nav > li > a {
+        margin-left: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container > .navbar-collapse .navbar-right {
+        margin-right: 15px;
+    }
+
+
+    /* ---------- My Work - Single.php ---------- */
+
+    #wpbgallery li img {
+        width: 150px;
+        height: 150px;
+        margin: 10px 5px 25px 5px !important;
+    }
+}
+
+
+/* ==========================================================================
+   Medium devices (desktops, 992px and up)
+========================================================================== */
+
+@media(min-width: 992px) {
+    h1 {
+        font-size: 130px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0 45px;
+    }
+
+
+    /* ---------- Home ---------- */
+
+    .tagline-text {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-me-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-me-image, .about-me-div {
+        width: 250px;
+    }
+}
+
+
+/* ==========================================================================
+   Large devices (large desktops, 1200px and up)
+========================================================================== */
+
+@media(min-width: 1200px) {
+}
+
+
+/* ==========================================================================
+   Misc
+========================================================================== */
+
+@media(min-width: 450px) and (max-width:991px) {
+    .col-xs-12 {
+        width: 50%;
+    }
+}
