@@ -49,10 +49,10 @@ get_header(); ?>
           <?php endif; ?>
           <div class="post-link">
             <div class="post-link-next">
-              <?php next_post_link('&laquo; %link') ?>
+              <?php next_post_link('&laquo; %link', '%title', true); ?>
             </div>
             <div class="post-link-previous">
-              <?php previous_post_link('%link &raquo;') ?>
+              <?php previous_post_link('%link &raquo;', '%title', true); ?>
             </div>
             <div class="clearfix"></div>
           </div>
