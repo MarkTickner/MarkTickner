@@ -111,8 +111,7 @@ a:hover, a:active {
 
 .footer {
     font-size: 10px;
-    color: #333;
-    background-color: #FFF;
+    color: #FFF;
     padding: 1px 3px;
     float: right;
     margin-bottom: 50px;
@@ -120,7 +119,6 @@ a:hover, a:active {
 
 .footer-home {
     color: #000;
-    background-color: #777;
     position: absolute;
     position: fixed;
     margin-bottom: 0px;
