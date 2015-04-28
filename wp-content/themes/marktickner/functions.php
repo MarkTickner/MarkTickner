@@ -48,7 +48,7 @@ add_editor_style();
 function the_category_filter($category_list, $separator = ' ') {
     if (!defined('WP_ADMIN')) {
         // List the category names to exclude
-        $excluded_categories = array('My Work', 'Blog');
+        $excluded_categories = array('Work', 'Blog');
 
         $categories = explode($separator, $category_list);
         $new_category_list = array();
@@ -74,6 +74,18 @@ function is_subcategory() {
     $category = get_category($cat);
 
     return ($category->parent == '0') ? false : true;
+}
+
+// Function that cuts a string to a specified length, not cutting words. Source: http://stackoverflow.com/a/17702942
+function string_cut($string, $char_length) {
+    $string = strip_tags($string);
+
+    if (strlen($string) > $char_length) {
+        $cut_index = strpos($string, ' ', $char_length);
+        $string = substr($string, 0, ($cut_index === false ? $char_length : $cut_index)) . '&#8230;';
+    }
+
+    return $string;
 }
 
 ?>

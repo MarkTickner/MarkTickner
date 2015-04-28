@@ -26,7 +26,7 @@ get_header(); ?>
         <span class="tagline tagline-text shadow">
         <?php bloginfo( 'description' ); ?>
         <?php the_content(); ?>
-        </span> <a class="btn btn-primary btn-about tagline-text shadow" href="about/">About Me »</a>
+        </span> <a class="btn btn-primary btn-about tagline-text shadow" href="about/">About »</a>
         <?php endwhile; ?>
         <?php endif; ?>
       </section>
