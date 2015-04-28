@@ -13,11 +13,11 @@ wp_footer(); ?>
     <footer>
         <?php if ( is_page_template( 'page-templates/front-page.php' ) ) : ?>
             <div class="container container-full-width">
-                <div class="footer footer-home shadow">&copy; Mark Tickner, <?php echo date("Y"); ?></div>
+                <div class="footer footer-home">&copy; Mark Tickner, <?php echo date("Y"); ?></div>
             </div>
         <?php else : ?>
             <div class="container">
-                <div class="footer shadow">&copy; Mark Tickner, <?php echo date("Y"); ?></div>
+                <div class="footer">&copy; Mark Tickner, <?php echo date("Y"); ?></div>
             </div>
         <?php endif; ?>
     </footer>

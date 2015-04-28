@@ -111,8 +111,7 @@ a:hover, a:active {
 
 .footer {
     font-size: 10px;
-    color: #333;
-    background-color: #FFF;
+    color: #FFF;
     padding: 1px 3px;
     float: right;
     margin-bottom: 50px;
@@ -120,7 +119,6 @@ a:hover, a:active {
 
 .footer-home {
     color: #000;
-    background-color: #777;
     position: absolute;
     position: fixed;
     margin-bottom: 0px;
@@ -188,64 +186,75 @@ a:hover, a:active {
     text-align: right;
 }
 
-/* ---------- My Work - Category.php ---------- */
 
-.work-item {
+/* ---------- Category Template - category.php, category-*.php ---------- */
+
+.item {
     margin-bottom: 15px;
     background-color: #EEE;
 }
 
-    .work-item:hover, .work-item:focus, .work-item:active {
+    .item:hover, .item:focus, .item:active {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
         filter: alpha(opacity=90);
         opacity: 0.9;
         background-color: #F6F6F6;
     }
 
-    .work-item a:link, .work-item a:visited {
+    .item a:link, .item a:visited {
         color: #333;
     }
 
-    .work-item a:hover, .work-item a:focus {
+    .item a:hover, .item a:focus {
         text-decoration: none;
     }
 
-.work-item-top {
+.item-image {
     background: url(../../uploads/2014/04/Work_Placeholder.png) no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     height: 150px;
 }
 
-.work-item-bottom {
-    padding: 15px 10px;
+.item-main {
+    padding: 10px;
 }
 
-.work-item-title {
-    padding-bottom: 10px;
+.item-main > .title {
+    font-weight: bold;
+    display: inline;
 }
 
-.work-item-categories {
+.item-main > .date {
+    font-size: 10px;
+    color: #999;
+    display: inline;
+}
+
+.item-main > .excerpt {
+}
+
+.item-main.item-categories {
     padding-top: 0;
 }
 
-    .work-item-categories a:hover, .work-item-categories a:focus {
+    .item-main.item-categories a:hover, .item-main.item-categories a:focus {
         text-decoration: underline;
     }
 
-    .work-item-categories div {
+    .item-main.item-categories div {
         background-color: #FFF;
         font-size: 10px;
         padding: 3px;
         display: inline-block;
     }
 
-    .work-item-categories .glyphicon {
+    .item-main.item-categories .glyphicon {
         padding-right: 3px;
     }
 
 
-/* ---------- My Work - Single.php ---------- */
+/* ---------- My Work - single.php ---------- */
 
 .page-header-bar {
     position: relative;
@@ -410,6 +419,10 @@ a:hover, a:active {
     margin: auto;
 }
 
+.navbar-home {
+    margin-left: 10px;
+}
+
 .container > .navbar-header {
     margin-left: 10px;
 }
@@ -491,14 +504,6 @@ a:hover, a:active {
     .container {
         padding: 0 25px;
     }
-
-    /*
-    .footer {
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-    }
-    */
 
 
     /* ---------- About ---------- */
@@ -601,8 +606,8 @@ a:hover, a:active {
    Misc
 ========================================================================== */
 
-@media(min-width: 450px) and (max-width:991px) {
-    .col-xs-12 {
+@media(min-width: 500px) and (max-width:991px) {
+    .col-xs-12-2 {
         width: 50%;
     }
 }

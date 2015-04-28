@@ -80,10 +80,9 @@
                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
               </button>
             </div>
-            <div class="nav-bottom-only navbar-brand-home-container"><a class="navbar-brand navbar-brand-home">Take a look &raquo;</a></div>
           </div>
           <div class="navbar-collapse collapse">
-            <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'nav navbar-nav', 'fallback_cb' => 'false', 'container' => false ) ); ?>
+            <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'nav navbar-nav navbar-home', 'fallback_cb' => 'false', 'container' => false ) ); ?>
             <?php if ( is_user_logged_in() ) { ?>
             <ul class="nav navbar-nav navbar-right">
               <li class="nav-link-admin dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret caret-up large-screen-only"></b><b class="caret small-screen-only"></b></a>
