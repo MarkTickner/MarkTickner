@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying work Category pages
+ * The template for displaying 'Work' Category pages
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
