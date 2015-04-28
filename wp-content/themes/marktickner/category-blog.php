@@ -37,8 +37,8 @@ get_header(); ?>
           <?php if ( have_posts() ) : ?>
             <div class="row">
               <?php while ( have_posts() ) : the_post(); ?>
-                <div class="col-xs-12 col-md-4">
-                  <div class="work-item shadow transition">
+                <div class="col-xs-12">
+                  <div class="item shadow transition">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                       <?php
                         $post_thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'work-item-top-image', false, '' );
@@ -47,10 +47,13 @@ get_header(); ?>
                           $post_thumbnail_style = 'style="background-image: url(\'' . $post_thumbnail_src[0] . '\');"';
                         }
                       ?>
-                      <div class="work-item-top" <?php echo $post_thumbnail_style; ?>></div>
-                      <div class="work-item-bottom work-item-title"><?php the_title(); ?></div>
+                      <div class="item-main">
+                        <div class="title"><?php the_title(); ?></div>
+                        <div class="date"><?php the_time('d F Y \a\t h:i'); ?></div>
+                        <div class="excerpt"><?php echo string_cut(get_the_content(), 150); ?></div>
+                      </div>
                     </a>
-                    <div class="work-item-bottom work-item-categories">
+                    <div class="item-main item-categories">
                       <div class="shadow"><span class="glyphicon glyphicon-tags"></span>
                         <?php the_category_filter( the_category( ', ' ) ) ?>
                       </div>
