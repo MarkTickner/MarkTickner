@@ -369,12 +369,20 @@ a:hover, a:active {
 
 /* ---------- Navbar ---------- */
 
-.nav-link-home > a, .nav-link-about > a, .nav-link-work > a, .nav-link-contact > a, .nav-link-admin > a {
+.nav-link-home > a, .nav-link-about > a, .nav-link-work > a, .nav-link-blog > a, .nav-link-contact > a, .nav-link-admin > a {
     font-weight: bold;
 }
 
-    .nav-link-about > a:hover, .nav-link-about > a:focus, .nav-link-work > a:hover, .nav-link-work > a:focus, .nav-link-contact > a:hover, .nav-link-contact > a:focus, .nav-link-home > a:hover, .nav-link-home > a:focus, .nav-link-admin > a:hover, .nav-link-admin > a:focus {
+    .nav-link-home > a:hover, .nav-link-home > a:focus, .nav-link-about > a:hover, .nav-link-about > a:focus, .nav-link-work > a:hover, .nav-link-work > a:focus, .nav-link-blog > a:hover, .nav-link-blog > a:focus, .nav-link-contact > a:hover, .nav-link-contact > a:focus, .nav-link-admin > a:hover, .nav-link-admin > a:focus {
         color: #FFF !important;
+    }
+
+.nav-link-home > a, .nav-link-admin > a {
+    color: #777 !important;
+}
+
+    .nav-link-home > a:hover, .nav-link-home > a:focus, .nav-link-admin > a:hover, .nav-link-admin > a:focus {
+        background-color: #777 !important;
     }
 
 .nav-link-about > a {
@@ -393,20 +401,20 @@ a:hover, a:active {
         background-color: #27669C !important;
     }
 
+.nav-link-blog > a {
+    color: #E88C00 !important;
+}
+
+    .nav-link-blog > a:hover, .nav-link-blog > a:focus {
+        background-color: #E88C00 !important;
+    }
+
 .nav-link-contact > a {
     color: #417202 !important;
 }
 
     .nav-link-contact > a:hover, .nav-link-contact > a:focus {
         background-color: #417202 !important;
-    }
-
-.nav-link-home > a, .nav-link-admin > a {
-    color: #777 !important;
-}
-
-    .nav-link-home > a:hover, .nav-link-home > a:focus, .nav-link-admin > a:hover, .nav-link-admin > a:focus {
-        background-color: #777 !important;
     }
 
 .navbar-default {

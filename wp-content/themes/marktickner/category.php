@@ -49,7 +49,7 @@ get_header(); ?>
                       ?>
                       <div class="item-main">
                         <div class="title"><?php the_title(); ?></div>
-                        <div class="date"><?php the_time('d F Y \a\t h:i'); ?></div>
+                        <div class="date"><?php the_time('d F Y'); ?></div>
                         <div class="excerpt"><?php echo string_cut(get_the_content(), 150); ?></div>
                       </div>
                     </a>
