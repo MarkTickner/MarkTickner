@@ -2,7 +2,5 @@
 
 openshift.inc
 
-runace-online/
-
 wordpress/wp-content/*
 !wordpress/wp-content/themes/marktickner/
