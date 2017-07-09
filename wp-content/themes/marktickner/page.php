@@ -14,10 +14,6 @@
 
 get_header();
 
-if ( is_page( 'contact' ) ) : ?>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/contact-style.css">
-<?php endif;
-
 ?>
 
 <!-- Content -->
