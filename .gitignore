@@ -4,7 +4,7 @@ openshift.inc
 
 runace-online/
 
-wp-content/languages/
-wp-content/plugins/
-wp-content/themes/twentyfifteen/
-wp-content/uploads/
+wordpress/wp-content/languages/
+wordpress/wp-content/plugins/
+wordpress/wp-content/themes/twentyfifteen/
+wordpress/wp-content/uploads/
