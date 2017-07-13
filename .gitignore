@@ -1,6 +1,3 @@
 .idea/
 
 openshift.inc
-
-wordpress/wp-content/*
-!wordpress/wp-content/themes/marktickner/
